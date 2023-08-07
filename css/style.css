@@ -1,0 +1,413 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}  a{text-decoration: none; color: #1D1D1D;}
+
+/* inter-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../Fonts/inter-v12-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../Fonts/inter-v12-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Fonts/inter-v12-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-800 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../Fonts/inter-v12-cyrillic_latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-900 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../Fonts/inter-v12-cyrillic_latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  body{
+    background-image: url(../Images/Back.png);
+    background-attachment: scroll;
+    background-position-x: center;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #2F2A6C;
+    color: #FFF;
+    text-shadow: 0px 0.6557377576828003px 0.6557377576828003px rgba(0, 0, 0, 0.60);
+    font-family: 'Inter';
+    font-style: normal;
+    flex-shrink: 0;
+  }
+
+  #Greeter{
+    width: 78.83vw;
+    position: absolute;
+    margin: 0 10.58vw;
+    display: flex;
+  }
+
+  #Logo{
+    width: 74.6vw;
+    position: relative;
+    margin: 12.25vw auto 0 auto;
+  }
+
+  .Text_Greeter{
+    color: #FFF;
+    text-shadow: 0px 0.6557377576828003px 0.6557377576828003px rgba(0, 0, 0, 0.60);
+    font-size: 1.3115vw;
+    font-weight: 300;
+    line-height: 1.53vw;
+    letter-spacing: -0.065583vw;
+  }
+
+  #Text_Request{
+    width: 21.04vw;
+    height: 4.4809vw;
+    position: absolute;
+    margin: 44.8616vw 0 0 2.666vw;
+  }
+
+  #Provocation{
+    font-size: 1.96725vw;
+    font-weight: 700;
+    line-height: 2.0765vw;
+    letter-spacing: -0.098333vw;
+    width: 22.021833vw;
+    height: 6.0655833vw;
+    position: absolute;
+    margin: 37.6116667vw 0 0 52.25vw;
+  }
+
+  #Title_Provocation{
+    color: #1DD100;
+  }
+
+  #Text_Provocation{
+    width: 22.021833vw;
+    height: 4.863416vw;
+    position: absolute;
+    margin: 44.8616vw 0 0 52.25vw;
+  }
+
+  #Video{
+    width: 19.562833vw;
+    height: 14.8634167vw;
+    border-radius: 0.54641667vw;
+    border: 0.16391667vw solid rgba(255, 255, 255, 0.25);
+    background: linear-gradient(163deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.00) 100%);
+    backdrop-filter: blur(1.91236vw);
+    position: absolute;
+    margin: 36.1116667vw 0 0 29vw;
+  }
+
+  #Button_GO-Video{
+    width: 55%;
+    margin: 10% 22.5% 10% 22.5%;
+  }
+
+  #Title_and_Information-CHANGES{
+    position: absolute;
+    margin: 60vw 0 0 11.583vw;
+  }
+
+  .Title_main{
+    font-size: 3.2055vw;
+    font-weight: 700;
+    line-height: 2.88vw;
+    letter-spacing: -0.16025vw;
+  }
+
+  .Information{
+    font-size: 1.857916vw;
+    font-weight: 300;
+    line-height: 1.96725vw;
+    letter-spacing: -0.09291667vw;
+  }
+
+  #Title_main_Changes{
+    width: 42.4563vw;
+    height: auto;
+    position: absolute;
+  }
+
+  #Information_Changes{
+    width: 74.1535vw;
+    position: absolute;
+    margin-top: 4vw;
+  }
+
+  #Information_changes-pis{
+    color: #1DD100;
+    font-weight: 800;
+  }
+
+  #Information_Data{
+    font-size: 1.092916vw;
+    font-weight: 500;
+    line-height: 1.63933vw;
+    letter-spacing: -0.05466vw;
+    width: 13.2240833vw;
+    height: 8.25133vw;
+    position: absolute;
+    margin: 147.7783vw 0 0 54.83vw;
+  }
+
+  #Title_main_Result{
+    width: 25.95625vw;
+  }
+
+  #Information_Result{
+    width: 25.1235vw;
+    position: absolute;
+    margin-top: 2.25vw;
+  }
+
+  #Title_and_Information-RESULT{
+    position: absolute;
+    margin: 127.945vw 0 0 12.25vw;
+  }
+
+  #Title_main_Modules{
+    width: 29.554vw;
+  }
+
+  #Information_Modules{
+    width: 33.6569167vw;
+    margin-top: 2.25vw;
+  }
+
+  #Modules{
+    position: absolute;
+    margin: 158.6vw 0 0 12.25vw;
+  }
+
+  #Information_Modules_pis{
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  #Title_main_Proposal{
+    width: 20.32783vw;
+  }
+
+  #Information_Proposal{
+    width: 75.3vw;
+    margin-top: 2.25vw;
+  }
+
+  #Title_and_Information-PROPOSAL{
+    position: absolute;
+    margin: 206.5vw 0 0 12.25vw;
+  }
+
+  #PROPOSAL{
+    position: absolute;
+    margin-top: 190.6vw;
+  }
+
+  .Text_format_Footer-end{
+    color: #000;
+    font-size: 1.63933vw;
+    font-weight: 500;
+    line-height: 1.7486vw;
+    letter-spacing: -0.082vw;
+  }
+
+  #Text_format_Footer-yers{
+    position: absolute;
+    margin: 266.5vw 0 0 47.5vw;
+  }
+
+  #Text_format_Footer_citi{
+    position: absolute;
+    margin: 264.416vw 0 0 43.583vw;
+  }
+
+  .Text_format_Footer{
+    color: #423F45;
+    font-size: 1.6393vw;
+    font-weight: 300;
+    line-height: 1.7486vw;
+    letter-spacing: -0.082vw; 
+  }
+
+  #Information_Footer{
+    width: 20.983583vw;
+    position: absolute;
+    margin: 240.5vw 0 0 55.916vw;
+  }
+
+  #Text_format_Footer_FSI{
+    position: absolute;
+    width: 18.67vw;
+    margin: 252.083vw 0 0 55.916vw;
+  }
+
+  #FSI{
+    width: 19.56283vw;
+    position: absolute;
+    margin: 253.83vw 0 0 55.916vw;
+  }
+
+  #Title_format_Footer{
+    color: #423F45;
+    font-size: 3.169416vw;
+    font-weight: 300;
+    line-height: 1.7486vw;
+    letter-spacing: -0.1585vw;
+    position: absolute;
+    margin: 240.5vw 0 0 23.083vw;
+  }
+
+  #Text_format_Footer_Bold{
+    color: #000;
+    font-weight: 700;
+    position: absolute;
+    margin: 244vw 0 0 23.083vw;
+  }
+
+  #Text_format_Footer_Name{
+    width: 29.6175vw;
+    position: absolute;
+    margin: 246.83vw 0 0 23.083vw;
+  }
+
+  #Text_format_Mail{
+    color: #000;
+    font-size: 1.6393vw;
+    font-weight: 300;
+    line-height: 1.7486vw;
+    letter-spacing: -0.082vw;
+    text-decoration-line: underline;
+    position: absolute;
+    margin: 252.6vw 0 0 23.083vw;
+  }
+
+  #Text_format_Numder{
+    font-weight: 700;
+    
+  }
+
+  .Navigation{
+    width: 100%;
+    position: fixed;
+    height: auto;
+    transform: .5s linear;
+    z-index: 999;
+  }
+
+  #Navigation_bar{
+    width: 77.02383vw;
+    height: 2.802083vw;
+    position: relative;
+    margin: 4vw 0 0 10.58vw;
+  }
+
+  .Navigation_active{
+    backdrop-filter: blur(22.95081901550293px);
+    padding-bottom: 1vw;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.20);
+  }
+
+  #Navigation_Menu{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8196vw;
+    margin-left: 2.5vw;
+  }
+
+  #Navigation_Circle-button{
+    display: inline-flex;
+    gap: 0.5vw;
+  }
+
+  #Navigation_Circle-button img{
+    height: 3vw;
+  }
+
+  #Navigation_Menu img{
+    height: 2.802083vw;
+  }
+
+  marquee{
+    width: 24.153vw;
+    font-size: 1.53vw;
+    font-weight: 300;
+    letter-spacing: -0.107vw;
+    margin-bottom: 0.7vw;
+  }
+
+  @media screen and (min-width: 1200px){
+    #Video{
+      height: 14.634167vw;
+      margin: 35.6667vw 0 0 28vw;
+    }
+
+    #Information_Data{
+      margin: 145.7783vw 0 0 54.33vw;
+    }
+
+    #Information_Footer{
+      margin: 237.5vw 0 0 55.916vw;
+    }
+
+    #Text_format_Footer_FSI{
+      margin: 249vw 0 0 55.916vw;
+    }
+
+    #FSI{
+      margin: 250.83vw 0 0 55.916vw;
+    }
+
+    #Title_format_Footer{
+      margin: 237.5vw 0 0 23.083vw;
+    }
+
+    #Text_format_Footer_Bold{
+      margin: 241vw 0 0 23.083vw;
+    }
+
+    #Text_format_Footer_Name{
+      margin: 243.83vw 0 0 23.083vw;
+    }
+
+    #Text_format_Mail{
+      margin: 249.6vw 0 0 23.083vw;
+    }
+
+  }
